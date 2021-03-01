@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.Button ?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="935.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="engine.Controller">
+   <children>
+
+
+      <fx:include fx:id="card1Player2" source = "cardControl.fxml" layoutX="125.0"/>
+      <fx:include fx:id="card2Player2" source = "cardControl.fxml" layoutX="260.0"/>
+      <fx:include fx:id="card3Player2" source = "cardControl.fxml" layoutX="395.0"/>
+      <fx:include fx:id="card4Player2" source = "cardControl.fxml" layoutX="530.0"/>
+      <fx:include fx:id="card5Player2" source = "cardControl.fxml" layoutX="665.0"/>
+      <fx:include fx:id="card6Player2" source = "cardControl.fxml" layoutX="800.0"/>
+      <fx:include fx:id="card1Player1" source = "cardControl.fxml" layoutX="125.0" layoutY="600.0"/>
+      <fx:include fx:id="card2Player1" source = "cardControl.fxml" layoutX="260.0" layoutY="600.0"/>
+      <fx:include fx:id="card3Player1" source = "cardControl.fxml" layoutX="395.0" layoutY="600.0"/>
+      <fx:include fx:id="card4Player1" source = "cardControl.fxml" layoutX="530.0" layoutY="600.0"/>
+      <fx:include fx:id="card5Player1" source = "cardControl.fxml" layoutX="665.0" layoutY="600.0"/>
+      <fx:include fx:id="card6Player1" source = "cardControl.fxml" layoutX="800.0" layoutY="600.0"/>
+
+      <fx:include fx:id="player2" source = "playerControl.fxml" />
+      <fx:include fx:id="player1" source = "playerControl.fxml" layoutY="600.0" />
+
+      <fx:include fx:id="minion1Player2" source = "minionControl.fxml" layoutY="200.0"/>
+      <fx:include fx:id="minion2Player2" source = "minionControl.fxml" layoutX="135.0" layoutY="200.0"/>
+      <fx:include fx:id="minion3Player2" source = "minionControl.fxml" layoutX="270.0" layoutY="200.0"/>
+      <fx:include fx:id="minion4Player2" source = "minionControl.fxml" layoutX="405.0" layoutY="200.0"/>
+      <fx:include fx:id="minion5Player2" source = "minionControl.fxml" layoutX="540.0" layoutY="200.0"/>
+      <fx:include fx:id="minion6Player2" source = "minionControl.fxml" layoutX="672.0" layoutY="200.0"/>
+      <fx:include fx:id="minion7Player2" source = "minionControl.fxml" layoutX="800.0" layoutY="200.0"/>
+      <fx:include fx:id="minion1Player1" source = "minionControl.fxml" layoutY="400.0"/>
+      <fx:include fx:id="minion2Player1" source = "minionControl.fxml" layoutX="135.0" layoutY="400.0"/>
+      <fx:include fx:id="minion3Player1" source = "minionControl.fxml" layoutX="270.0" layoutY="400.0"/>
+      <fx:include fx:id="minion4Player1" source = "minionControl.fxml" layoutX="405.0" layoutY="400.0"/>
+      <fx:include fx:id="minion5Player1" source = "minionControl.fxml" layoutX="540.0" layoutY="400.0"/>
+      <fx:include fx:id="minion6Player1" source = "minionControl.fxml" layoutX="672.0" layoutY="400.0"/>
+      <fx:include fx:id="minion7Player1" source = "minionControl.fxml" layoutX="800.0" layoutY="400.0"/>
+
+
+      <Pane fx:id="fieldError" layoutY="284.0" prefHeight="100.0" prefWidth="935.0" style="-fx-background-color: RED;" visible="true">
+         <children>
+            <Label fx:id="textError" layoutY="-50.0" prefHeight="188.0" prefWidth="935.0" text="YOU CAN'T ATTACK YOUR OPPONENT! YOUR OPPONENT CONTROL MINION WITH TAUNT." textFill="BLACK">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Button onAction="#setHideError" layoutX="399.0" layoutY="56.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="137.0" text="CLOSE FIELD " />
+         </children>
+      </Pane>
+
+   </children>
+</Pane>
