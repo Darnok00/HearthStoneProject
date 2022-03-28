@@ -1,5 +1,5 @@
 # HearthStoneProject
-The project for the OOP Course during III semestr at AGH UST. 
+The second project for the OOP Course during III semestr at AGH UST. 
 
 # Technology stack
 * Java 15
